@@ -11,19 +11,16 @@ const repeatValue = function(value, number) {
 
 const repeatNumbers = function(data) {
   // Put your solution here
-  let result = "";
+  let result = [];
   for (let i = 0; i < data.length; i++) {
     const element = data[i];
     const valueToRepeat = element[0];
     const numberOfTimes = element[1];
   
-    result += repeatValue(valueToRepeat, numberOfTimes);
-    if (i !== data.length - 1) {
-      result += ", ";
-    }
+    result.push(repeatValue(valueToRepeat, numberOfTimes));
   }
 
-  return result;
+  return result.join(', ');
 };
 
 console.log(repeatNumbers([[1, 10]]));
