@@ -1,14 +1,21 @@
+
+const repeatValue = function(value, number) {
+  let result = "";
+
+  for (let i = 0; i < number; i++) {
+    result += value.toString();
+  }
+
+  return result;
+};
+
 const repeatNumbers = function(data) {
   // Put your solution here
   const firstElement = data[0];
   const valueToRepeat = firstElement[0];
   const numberOfTimes = firstElement[1];
 
-  let result = "";
-
-  for (let i = 0; i < numberOfTimes; i++) {
-    result += valueToRepeat.toString();
-  }
+  const result = repeatValue(valueToRepeat, numberOfTimes);
 
   return result;
 };
