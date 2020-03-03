@@ -25,3 +25,20 @@ $ node challenge1.js 1 2 3 4 5
 ### Challenge #2
 
 > [Kata 6: Repeating Numbers](https://web.compass.lighthouselabs.ca/activities/642)
+
+The input data for this exercise will be two dimensional array (an array of arrays), where each sub-array will have two numeric values. For example:
+
+```javascript
+[
+  [1, 2],
+  [2, 3]
+];
+```
+
+The first will be the value to repeat, the second will be the amount of times to repeat that value.
+
+Expected Output:
+
+```
+11, 222
+```
